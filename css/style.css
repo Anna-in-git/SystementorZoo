@@ -6,22 +6,40 @@
   box-sizing: border-box;
 }
 
-.topnav {
-  background-color: rgba(231, 179, 101, 0.85);
-  display: flex;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(231, 179, 101, 0.85);
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+/*-----Återanvändningsbar layout----------------------------------------------------------------------------------*/
+.split-layout {
+    
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    border-bottom: 2px solid green;
+}
+
+/*-----  Navbar   ---------------------------------------------------------------------------------------*/
+.topnav {
+  display: flex;
   justify-content: space-between;
   align-items: center; /* vertikalt */
-  gap: 15px;
   padding: 15px 40px;
-  
 }
+
 .logo {
     font-family: "Baloo 2", sans-serif; /*ändra font i logon*/
     font-size: 1.8rem;
     letter-spacing: 1px;
-    margin-right: 20px;
-
 }
 
 .topnav ul {
@@ -41,23 +59,233 @@
     border-radius: 6px;
     
 }
+
+/*-------- Herobild ---------------------------------------------------------------------------------------*/
+
 .hero {
+    
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
-    height: 50vh;
+    height: 65vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
-    url(../img/zoo.jpg);
+    url(../img/zoo1.jpg);
     background-size: cover;
-    background-position: center top 25%;
-  
+    background-position: center bottom 25%;
+    
 }
 
-.hero h2 {
+/*.hero h2 {
     text-shadow: 0 3px 10px rgba(0,0,0,0.7);
-    font-size: clamp(1.5rem, 3vw, 2rem); /* minst 1.5rem, växer med skärmstorlek, max 2rem*/
+    font-size: clamp(1.5rem, 3vw, 2rem); /* minst 1.5rem, växer med skärmstorlek, max 2rem
     letter-spacing: 1px;
     color: rgb(213, 185, 58);
     margin-bottom: 5px;
+}
+*/
+
+/*----- Introduktion ---------------------------------------------------------------------------------------*/
+
+.intro {
+   
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+    border-radius: 10px; 
+    max-width: 900px; 
+    margin: 30px auto;
+    text-align: center; 
+
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+}
+
+.intro p {
+    line-height: 1.6; /* gör texten lättare att läsa */
+}
+
+
+
+/*-----Att Göra sektion--------------------------------------------------------------------------------------*/
+
+
+
+.activitiestext h2 {
+    font-size: 2rem;
+    color: black;
+}
+.activitiestext ul {
+    list-style: none;
+}
+
+.activitiestext li {
+    margin: 10px;
+}
+
+.activitiestext a {
+    text-decoration: none;
+    color: black;  
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+
+.activities img {
+    max-width: 90vh;
+    width: 100%;
+    
+}
+
+.animalarticles {
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+    border-radius: 10px; 
+    max-width: 900px; 
+    margin: 30px auto;
+    text-align: center; 
+}
+.animalarticles article {
+    margin: 80px;
+}
+.animalarticles h1 {
+    margin-bottom: 40px;
+}
+
+.animalarticles article p {
+    border-left: 4px solid  green;
+    padding-left: 15px;              /* avstånd mellan streck och text */
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/*----- Våra djur ---------------------------------------------------------------------------------------*/
+/*
+.h2 luftigare, större, snyggare font
+kolla upp om bra alt text på bilderna
+*/
+
+.animals {
+    padding: 40px 40px;
+}
+
+.animals h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.animalgallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.animals figure {
+    width: 180px;
+    text-align: center;
+
+}
+
+.animals img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.animaltext {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px; /* rundar alla hörn på texten */
+    margin-top: -5px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.animals figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.animals figure p {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/*------ Tabell -----------------------------------------------------------------------------------*/
+
+.animalinfotext {
+    width: 30%;
+}
+
+.animalinfotext h2{
+    margin-bottom: 20px;
+}
+.animaltable {
+    padding: 40px;
+    width: 30%;
+}
+.animaltable tr:hover{
+    background-color: rgb(252, 200, 138);
+}
+
+.animaltable th {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid grey;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.animaltable td {
+    padding: 10px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+   
+}
+
+/*------ Form -----------------------------------------------------------------------------------*/
+
+
+
+.newsform form {
+    width: 30%;
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+.newsformtext {
+    width: 30%;
+}
+
+.newsform input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.newsform button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hittahit iframe{
+    width: 40%;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.hittahittext {
+    width: 30%;
 }

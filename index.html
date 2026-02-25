@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
 
 
     <title>Systementor Zoo</title>
@@ -14,30 +16,188 @@
 <body>
 
     <header>
-        
+<!--Navbar-->         
         <nav class="topnav">
             <h1 class="logo">Systementor Zoo</h1> 
             <ul>
                 <li><a href="#">Hem</a></li>
-                <li><a href="#">Våra Djur</a></li>
-                <li><a href="#">Att Göra</a></li>
+                <li><a href="#djur">Våra Djur</a></li>
+                <li><a href="#activities">Att Göra</a></li>
                 <li><a href="#">Kontakta oss</a></li>
                 <li><a href="#">Nyhetsbrev</a></li>
             </ul>  
         </nav>
-         
+<!--Herobild-->          
         <section class="hero">
-            <h2>Välkommen att upptäcka våra fantastiska djur</h2>
+            <!-- <h2>Upptäck alla våra fantastiska djur</h2> -->
         </section>
     </header>
 
     <main>
-        <!--Introduktion-->
-        <!--Våra djur-->
-        <!--Att göra-->
-        <!--Formulär nyhetsbrev-->
+<!--Introduktion-->        
+        <section class="intro">
+        <h1>Välkommen till Systementor Zoo</h1>
+        <p>
+            Upptäck djur från hela världen i en trygg och spännande miljö.
+            Hos oss kan du lära dig mer om naturen, träffa fantastiska djur
+            och uppleva äventyr för hela familjen.
+        </p>
+        </section>
+
+
+<!--Att göra--> 
+        <section class="split-layout activities">
+            <div class="activitiestext">
+                <h2>Att göra hos oss:</h2>
+
+                <ul>
+                    <li><span class="material-symbols-outlined icon">pets</span><a href="#djur">Träffa våra fantastiska djur</a></li>
+                    <li><span class="material-symbols-outlined icon">restaurant</span><a href="#restauranger">Restauranger</a></li>
+                    <li><span class="material-symbols-outlined icon">playground</span><a href="#lekpark">Lekpark till barnen</a></li>
+                </ul>
+            </div>              
+            <img src="img/zooKarta.png" alt="zooKarta">
+        </section>
+
+
+        <section class="animalarticles">
+
+            <article id="restauranger">
+                <h1>En dag full av äventyr!</h1>
+                <h2>Restauranger med mat för hela familjen</h2>
+                <p>Här finns flera restauranger Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum cumque voluptatibus, dolores doloremque id provident. Distinctio repellat fugit debitis id vitae ullam praesentium necessitatibus impedit, est exercitationem, vel velit sequi voluptatibus quo consequatur. Perspiciatis, harum earum voluptatibus iure maxime enim saepe hic ad, commodi consectetur vel eaque illum atque molestias.</p>
+            </article>
+        
+            <article id="lekpark">
+                <h2>Lekparker, en rolig plats för alla.</h2>
+                <p>Barnen kan leka och utforska Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident distinctio hic itaque saepe consequatur excepturi fugiat esse accusantium eum adipisci, pariatur, voluptates beatae iste reprehenderit qui voluptatum similique! Hic, cupiditate.</p>
+            </article>
+
+            <article id="djur">
+                <h2>Träffa våra fantastiska djur</h2>
+                <p>Hos oss finns lejon, surikater, gorillor, flamingos och ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto assumenda ipsa facere eaque reiciendis nemo provident distinctio animi quas, perspiciatis voluptatibus. Quia provident incidunt consequuntur doloremque laboriosam numquam ullam nulla ea?. </p>
+            </article>
+        </section>
+
+            
+<!--Våra djur-->
+        <section class=" animals">
+
+            <div class="animalgallery">
+                <figure>
+                    <img src="img/lion.jpg" alt="lejon">
+                    <div class="animaltext">
+                    <figcaption>Lejon</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis aperiam odio deleniti unde facilis aut dolorum voluptates suscipit natus?</p>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="img/surikat.jpg" alt="lemurer">
+                    <div class="animaltext">
+                    <figcaption>Lemur</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis aperiam odio deleniti unde facilis aut dolorum voluptates suscipit natus?</p>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="img/gorilla.jpg" alt="gorilla">
+                    <div class="animaltext">
+                    <figcaption>Gorilla</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis aperiam odio deleniti unde facilis aut dolorum voluptates suscipit natus?</p>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="img/flamingos.jpg" alt="flamingos">
+                    <div class="animaltext">
+                    <figcaption>Flamingo</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis aperiam odio deleniti unde facilis aut dolorum voluptates suscipit natus?</p>
+                    </div>
+                </figure>
+            </div>
+        </section>
+            
+<!--Tabell -->   
+   
+        <section class="split-layout animalinfo">
+            <div class="animalinfotext">
+                <h2>Tabell med information om våra djur</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugiat illum qui minima aliquam sequi at reprehenderit facilis? Odio, voluptas in dicta ratione quaerat sint ab reiciendis, eos officiis at autem ipsa, consectetur quam adipisci id magni. Est, ex fuga. Magni aperiam earum perferendis ducimus vero corrupti distinctio aliquid laudantium!</p>
+            </div>
+            <table class="animaltable">
+                <tr>
+                    <th>Namn</th>
+                    <th>Art</th>
+                    <th>Vikt</th>
+                    <th>Wikipedia</th>
+                </tr>
+                <tr >
+                    <td>Lejon</td>
+                    <td><img src="img/lion.jpg" height="70" alt="Lejon"></td>
+                    <td>200kg</td>
+                    <td><a href="https://sv.wikipedia.org/wiki/Lejon">Info</a></td>
+                </tr>
+                <tr >
+                    <td>Surikat</td>
+                    <td><img src="img/surikat.jpg" height="70" alt="Surikater"></td>
+                    <td>1kg</td>
+                    <td><a href="https://sv.wikipedia.org/wiki/Surikat">Info</a></td>
+                </tr>
+                <tr >
+                    <td>Gorilla</td>
+                    <td><img src="img/gorilla.jpg" height="70" alt="Gorilla"></td>
+                    <td>150kg</td>
+                    <td><a href="https://sv.wikipedia.org/wiki/Gorilla">Info</a></td>
+                </tr>
+                <tr >
+                    <td>Flamingo</td>
+                    <td><img src="img/flamingos.jpg" height="70" alt="Flamingos"></td>
+                    <td>3kg</td>
+                    <td><a href="https://sv.wikipedia.org/wiki/Flamingo">Info</a></td>
+                </tr>
+            </table>
+        </section>
+            
+ <!--Formulär nyhetsbrev-->
+        
+        <section class="split-layout newsform">
+            <form action="https://formshow.systementor.se/" method="post">
+
+                <label for="fornamn">Förnamn:</label>
+                <input type="text" name="fornamn" id="fornamn" required>
+
+                <label for="efternamn">Efternamn:</label>
+                <input type="text" name="efternamn" id="efternamn" required>
+
+                <label for="epost">Epostadress:</label>
+                <input type="email" name="epost" id="epost" required>
+
+                <label for="alder">Ålder:</label>
+                <input type="number" name="alder" id="alder" required>
+
+                <button type="submit">Prenumerera</button>
+
+            </form>
+
+            <div class="newsformtext">
+                <h2>Prenumerera på vårt nyhetsbrev</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugiat illum qui minima aliquam sequi at reprehenderit facilis? Odio, voluptas in dicta ratione quaerat sint ab reiciendis, eos officiis at autem ipsa, consectetur quam adipisci id magni. Est, ex fuga. Magni aperiam earum perferendis ducimus vero corrupti distinctio aliquid laudantium!</p>
+            </div>
+        </section>
+
+        
+        
+        
+        
         <!--Google maps, hitta hit-->
 
+        <section class="split-layout hittahit">
+            <div class="hittahittext">
+            <h2>Du hittar oss här</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dignissimos aut aperiam, atque reprehenderit laudantium voluptate voluptas consequuntur provident libero.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.04069204639!2d15.120054264377691!3d59.278135177728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1771847926444!5m2!1ssv!2sse"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
 
     </main>
     
