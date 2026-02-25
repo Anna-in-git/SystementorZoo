@@ -17,14 +17,13 @@
 
     <header>
 <!--Navbar-->         
-        <nav class="topnav">
+        <nav class="topnav"  id="start">
             <h1 class="logo">Systementor Zoo</h1> 
             <ul>
-                <li><a href="#">Hem</a></li>
                 <li><a href="#djur">Våra Djur</a></li>
-                <li><a href="#activities">Att Göra</a></li>
-                <li><a href="#">Kontakta oss</a></li>
-                <li><a href="#">Nyhetsbrev</a></li>
+                <li><a href="#attgora">Att Göra</a></li>
+                <li><a href="#hittahit">Hitta hit</a></li>
+                <li><a href="#newsform">Nyhetsbrev</a></li>
             </ul>  
         </nav>
 <!--Herobild-->          
@@ -46,7 +45,7 @@
 
 
 <!--Att göra--> 
-        <section class="split-layout activities">
+        <section class="split-layout activities" id="attgora">
             <div class="activitiestext">
                 <h2>Att göra hos oss:</h2>
 
@@ -158,7 +157,7 @@
             
  <!--Formulär nyhetsbrev-->
         
-        <section class="split-layout newsform">
+        <section class="split-layout newsform" id="newsform">
             <form action="https://formshow.systementor.se/" method="post">
 
                 <label for="fornamn">Förnamn:</label>
@@ -179,7 +178,7 @@
 
             <div class="newsformtext">
                 <h2>Prenumerera på vårt nyhetsbrev</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugiat illum qui minima aliquam sequi at reprehenderit facilis? Odio, voluptas in dicta ratione quaerat sint ab reiciendis, eos officiis at autem ipsa, consectetur quam adipisci id magni. Est, ex fuga. Magni aperiam earum perferendis ducimus vero corrupti distinctio aliquid laudantium!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugiat illum qui minima aliquam sequi at reprehenderit facilis? Odio, voluptas in dicta ratione quaerat sint ab reiciendis, eos officiis at autem ipsa, consectetur!</p>
             </div>
         </section>
 
@@ -189,9 +188,9 @@
         
         <!--Google maps, hitta hit-->
 
-        <section class="split-layout hittahit">
+        <section class="split-layout hittahit" id="hittahit">
             <div class="hittahittext">
-            <h2>Du hittar oss här</h2>
+            <h2>Hitta hit: </h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dignissimos aut aperiam, atque reprehenderit laudantium voluptate voluptas consequuntur provident libero.</p>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.04069204639!2d15.120054264377691!3d59.278135177728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1771847926444!5m2!1ssv!2sse"
@@ -201,8 +200,35 @@
 
     </main>
     
-    <footer></footer>
+    <footer class="footer">
 
-   
+    <section class="footeritems">
+
+        <div class="footerlinks">
+            <h3>Snabblänkar</h3>
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#attgora">Aktiviteter</a></li>
+                <li><a href="#djur">Djur</a></li>
+            </ul>
+        </div>
+
+        <div class="footercontact">
+            <h3>Kontakt</h3>
+            <p>Email: info@systementorzoo.se</p>
+            <p>Telefon: 012-12 12 12</p>
+            <p>Örebro, Sverige</p>
+        </div>
+
+        <h2 class="logo">Systementor Zoo</h2>
+
+    </section>
+
+    <section class="footerbottom">
+        <p>© 2026 Systementor Zoo</p>
+    </section>
+
+    </footer>
+
 </body>
 </html>
